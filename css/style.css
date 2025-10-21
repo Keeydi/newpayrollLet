@@ -1,5 +1,23 @@
 @charset "utf-8";
-/* Modern Admin Dashboard CSS */
+/* Modern Admin Dashboard CSS - Updated Color Palette */
+
+/* Color Variables */
+:root {
+	--primary-color: #059669;
+	--primary-hover: #047857;
+	--secondary-color: #ea580c;
+	--success-color: #16a34a;
+	--warning-color: #d97706;
+	--danger-color: #dc2626;
+	--dark-text: #1f2937;
+	--medium-text: #64748b;
+	--light-text: #94a3b8;
+	--background-primary: #f1f5f9;
+	--background-secondary: #f8fafc;
+	--surface-color: #ffffff;
+	--border-color: rgba(0, 0, 0, 0.1);
+	--shadow-color: rgba(0, 0, 0, 0.1);
+}
 
 /* Reset and Base Styles */
 * {
@@ -12,8 +30,8 @@ body, html {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 14px;
 	line-height: 1.6;
-	color: #333;
-	background: #f5f5f0;
+	color: #1f2937;
+	background: #f1f5f9;
 	min-height: 100vh;
 	overflow-x: hidden;
 }
@@ -133,7 +151,7 @@ h4 {
 .hamburger {
 	width: 40px;
 	height: 40px;
-	background: #667eea;
+	background: var(--primary-color);
 	border: none;
 	border-radius: 10px;
 	display: flex;
@@ -142,12 +160,13 @@ h4 {
 	justify-content: center;
 	cursor: pointer;
 	transition: all 0.3s ease;
-	box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+	box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
 }
 
 .hamburger:hover {
 	transform: translateY(-2px);
-	box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+	box-shadow: 0 6px 20px rgba(5, 150, 105, 0.4);
+	background: var(--primary-hover);
 }
 
 .hamburger span {
@@ -163,7 +182,7 @@ h4 {
 .brand {
 	font-weight: 700;
 	font-size: 20px;
-	color: #2d3748;
+	color: var(--dark-text);
 	letter-spacing: -0.5px;
 }
 
@@ -177,14 +196,14 @@ h4 {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	background: #667eea;
+	background: var(--primary-color);
 	color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-weight: 700;
 	font-size: 16px;
-	box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+	box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
 	cursor: pointer;
 	transition: all 0.3s ease;
 	position: relative;
@@ -192,7 +211,8 @@ h4 {
 
 .avatar:hover {
 	transform: scale(1.1);
-	box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+	box-shadow: 0 6px 20px rgba(5, 150, 105, 0.4);
+	background: var(--primary-hover);
 }
 
 /* Profile Dropdown */
@@ -244,15 +264,15 @@ h4 {
 	display: flex;
 	align-items: center;
 	padding: 12px 20px;
-	color: #4a5568;
+	color: #64748b;
 	text-decoration: none;
 	transition: all 0.3s ease;
 	font-size: 14px;
 }
 
 .profile-dropdown a:hover {
-	background: #f7fafc;
-	color: #667eea;
+	background: #f8fafc;
+	color: #059669;
 }
 
 .profile-dropdown i {
@@ -324,7 +344,7 @@ h4 {
 	padding: 14px 16px;
 	border-radius: 12px;
 	text-decoration: none;
-	color: #4a5568;
+	color: #64748b;
 	font-weight: 500;
 	transition: all 0.3s ease;
 	position: relative;
@@ -338,7 +358,7 @@ h4 {
 	left: -100%;
 	width: 100%;
 	height: 100%;
-	background: #667eea;
+	background: var(--primary-color);
 	transition: left 0.3s ease;
 	z-index: -1;
 }
@@ -350,13 +370,13 @@ h4 {
 .nav-link:hover {
 	color: white;
 	transform: translateX(4px);
-	box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+	box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
 }
 
 .nav-link.active {
-	background: #667eea;
+	background: var(--primary-color);
 	color: white;
-	box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+	box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
 }
 
 .nav-icon {
@@ -432,7 +452,7 @@ h4 {
 .card h3 {
 	font-size: 18px;
 	font-weight: 600;
-	color: #2d3748;
+	color: #1f2937;
 	margin-bottom: 16px;
 	display: flex;
 	align-items: center;
@@ -442,7 +462,7 @@ h4 {
 .card-icon {
 	width: 20px;
 	height: 20px;
-	color: #667eea;
+	color: var(--primary-color);
 }
 
 .card table {
@@ -458,14 +478,14 @@ h4 {
 
 .card table th {
 	font-weight: 600;
-	color: #4a5568;
+	color: #64748b;
 	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 }
 
 .card table td {
-	color: #2d3748;
+	color: #1f2937;
 	font-weight: 500;
 }
 
@@ -493,26 +513,26 @@ h4 {
 }
 
 .data-table th {
-	background: rgba(102, 126, 234, 0.1);
+	background: rgba(5, 150, 105, 0.1);
 	font-weight: 600;
-	color: #2d3748;
+	color: #1f2937;
 	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 }
 
 .data-table td {
-	color: #4a5568;
+	color: #64748b;
 	font-weight: 500;
 }
 
 .data-table tr:hover {
-	background: rgba(102, 126, 234, 0.05);
+	background: rgba(5, 150, 105, 0.05);
 }
 
 /* Buttons */
 .btn {
-	background: #667eea;
+	background: var(--primary-color);
 	color: white;
 	border: none;
 	padding: 12px 24px;
@@ -520,7 +540,7 @@ h4 {
 	font-weight: 600;
 	cursor: pointer;
 	transition: all 0.3s ease;
-	box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+	box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
 	text-decoration: none;
 	display: inline-block;
 	text-align: center;
@@ -528,9 +548,51 @@ h4 {
 
 .btn:hover {
 	transform: translateY(-2px);
-	box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+	box-shadow: 0 6px 20px rgba(5, 150, 105, 0.4);
 	color: white;
 	text-decoration: none;
+	background: var(--primary-hover);
+}
+
+/* Button Variants */
+.btn-secondary {
+	background: var(--secondary-color);
+	box-shadow: 0 4px 15px rgba(234, 88, 12, 0.3);
+}
+
+.btn-secondary:hover {
+	background: #c2410c;
+	box-shadow: 0 6px 20px rgba(234, 88, 12, 0.4);
+}
+
+.btn-success {
+	background: var(--success-color);
+	box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
+}
+
+.btn-success:hover {
+	background: #15803d;
+	box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
+}
+
+.btn-warning {
+	background: var(--warning-color);
+	box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3);
+}
+
+.btn-warning:hover {
+	background: #b45309;
+	box-shadow: 0 6px 20px rgba(217, 119, 6, 0.4);
+}
+
+.btn-danger {
+	background: var(--danger-color);
+	box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+}
+
+.btn-danger:hover {
+	background: #b91c1c;
+	box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
 }
 
 /* Form Elements */
@@ -543,13 +605,13 @@ input[type="text"], input[type="password"], input[type="email"] {
 	backdrop-filter: blur(10px);
 	font-size: 14px;
 	transition: all 0.3s ease;
-	color: #2d3748;
+	color: #1f2937;
 }
 
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
 	outline: none;
-	border-color: #667eea;
-	box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
 	background: white;
 }
 
@@ -573,7 +635,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 
 .form-group label {
 	font-weight: 600;
-	color: #4a5568;
+	color: #64748b;
 	font-size: 14px;
 	display: flex;
 	align-items: center;
@@ -581,7 +643,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 }
 
 .form-group label i {
-	color: #667eea;
+	color: var(--primary-color);
 	width: 16px;
 	text-align: center;
 }
@@ -595,19 +657,19 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 	backdrop-filter: blur(10px);
 	font-size: 14px;
 	transition: all 0.3s ease;
-	color: #2d3748;
+	color: #1f2937;
 	cursor: pointer;
 }
 
 .form-group select:focus {
 	outline: none;
-	border-color: #667eea;
-	box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
 	background: white;
 }
 
 .form-group select:hover {
-	border-color: #667eea;
+	border-color: var(--primary-color);
 	background: white;
 }
 
@@ -642,7 +704,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 
 .message-field label {
 	font-weight: 600;
-	color: #4a5568;
+	color: #64748b;
 	font-size: 14px;
 	display: flex;
 	align-items: center;
@@ -650,22 +712,22 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 }
 
 .message-field label i {
-	color: #667eea;
+	color: var(--primary-color);
 	width: 16px;
 	text-align: center;
 }
 
 .field-value {
 	padding: 12px 16px;
-	background: rgba(102, 126, 234, 0.05);
+	background: rgba(5, 150, 105, 0.05);
 	border-radius: 8px;
-	color: #2d3748;
+	color: #1f2937;
 	font-weight: 500;
-	border-left: 4px solid #667eea;
+	border-left: 4px solid var(--primary-color);
 }
 
 .message-content .field-value {
-	background: rgba(102, 126, 234, 0.05);
+	background: rgba(5, 150, 105, 0.05);
 	min-height: 120px;
 	padding: 16px;
 }
@@ -723,7 +785,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 	backdrop-filter: blur(10px);
 	font-size: 14px;
 	transition: all 0.3s ease;
-	color: #2d3748;
+	color: #1f2937;
 	resize: vertical;
 	min-height: 120px;
 	font-family: inherit;
@@ -731,13 +793,13 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 
 .message-form textarea:focus {
 	outline: none;
-	border-color: #667eea;
-	box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
 	background: white;
 }
 
 .message-form textarea:hover {
-	border-color: #667eea;
+	border-color: var(--primary-color);
 	background: white;
 }
 
@@ -758,29 +820,29 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 	flex-direction: column;
 	gap: 8px;
 	padding: 16px;
-	background: rgba(102, 126, 234, 0.05);
+	background: rgba(5, 150, 105, 0.05);
 	border-radius: 12px;
-	border-left: 4px solid #667eea;
+	border-left: 4px solid var(--primary-color);
 	transition: all 0.3s ease;
 }
 
 .summary-item:hover {
-	background: rgba(102, 126, 234, 0.1);
+	background: rgba(5, 150, 105, 0.1);
 	transform: translateY(-2px);
 }
 
 .summary-item.highlight {
-	background: rgba(38, 166, 91, 0.1);
-	border-left-color: #26a69a;
+	background: rgba(22, 163, 74, 0.1);
+	border-left-color: var(--success-color);
 }
 
 .summary-item.highlight:hover {
-	background: rgba(38, 166, 91, 0.15);
+	background: rgba(22, 163, 74, 0.15);
 }
 
 .summary-item label {
 	font-weight: 600;
-	color: #4a5568;
+	color: #64748b;
 	font-size: 13px;
 	display: flex;
 	align-items: center;
@@ -788,24 +850,24 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 }
 
 .summary-item label i {
-	color: #667eea;
+	color: var(--primary-color);
 	width: 14px;
 	text-align: center;
 	font-size: 12px;
 }
 
 .summary-item.highlight label i {
-	color: #26a69a;
+	color: var(--success-color);
 }
 
 .summary-value {
 	font-size: 18px;
 	font-weight: 700;
-	color: #2d3748;
+	color: #1f2937;
 }
 
 .summary-item.highlight .summary-value {
-	color: #26a69a;
+	color: var(--success-color);
 	font-size: 20px;
 }
 
@@ -817,7 +879,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 
 .profile-field label {
 	font-weight: 600;
-	color: #4a5568;
+	color: #64748b;
 	font-size: 13px;
 	display: flex;
 	align-items: center;
@@ -825,7 +887,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 }
 
 .profile-field label i {
-	color: #667eea;
+	color: var(--primary-color);
 	width: 14px;
 	text-align: center;
 	font-size: 12px;
@@ -833,11 +895,11 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 
 .profile-field .field-value {
 	padding: 8px 12px;
-	background: rgba(102, 126, 234, 0.05);
+	background: rgba(5, 150, 105, 0.05);
 	border-radius: 6px;
-	color: #2d3748;
+	color: #1f2937;
 	font-weight: 500;
-	border-left: 3px solid #667eea;
+	border-left: 3px solid var(--primary-color);
 	font-size: 14px;
 }
 
@@ -853,26 +915,26 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 	flex-direction: column;
 	align-items: center;
 	padding: 20px 16px;
-	background: rgba(102, 126, 234, 0.05);
+	background: rgba(5, 150, 105, 0.05);
 	border-radius: 12px;
 	text-decoration: none;
-	color: #4a5568;
+	color: #64748b;
 	transition: all 0.3s ease;
 	border: 2px solid transparent;
 }
 
 .action-btn:hover {
-	background: rgba(102, 126, 234, 0.1);
-	border-color: #667eea;
+	background: rgba(5, 150, 105, 0.1);
+	border-color: var(--primary-color);
 	transform: translateY(-2px);
-	color: #667eea;
+	color: var(--primary-color);
 	text-decoration: none;
 }
 
 .action-btn i {
 	font-size: 24px;
 	margin-bottom: 8px;
-	color: #667eea;
+	color: var(--primary-color);
 }
 
 .action-btn span {
@@ -886,7 +948,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 }
 
 .welcome-message p {
-	color: #4a5568;
+	color: #64748b;
 	line-height: 1.6;
 	margin-bottom: 12px;
 }

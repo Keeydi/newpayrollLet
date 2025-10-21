@@ -143,7 +143,7 @@ $run5 = mysqli_query($conn, $qry5) or die(mysqli_error($conn));
 					</tr>
 					<?php  while($rb = mysqli_fetch_array($run4)) {?>
 					<tr>
-						<td><a href="position.php?position=<?php echo $rb['position'];?>" style="color: #667eea; text-decoration: none;"><?php echo $rb['position'];?></a></td>
+						<td><a href="position.php?position=<?php echo $rb['position'];?>" style="color: #059669; text-decoration: none;"><?php echo $rb['position'];?></a></td>
 						<td><strong><?php echo $rb['count(*)']; ?></strong></td>
 					</tr>
 					<?php }?>
@@ -161,7 +161,7 @@ $run5 = mysqli_query($conn, $qry5) or die(mysqli_error($conn));
 					</tr>
 					<?php  while($r = mysqli_fetch_array($run5)) {?>
 					<tr>
-						<td><a href="department.php?department=<?php echo $r['department']; ?>" style="color: #667eea; text-decoration: none;"><?php echo $r['department'];?></a></td>
+						<td><a href="department.php?department=<?php echo $r['department']; ?>" style="color: #059669; text-decoration: none;"><?php echo $r['department'];?></a></td>
 						<td><strong><?php echo $r['count(*)']; ?></strong></td>
 					</tr>
 					<?php }?>
@@ -171,36 +171,36 @@ $run5 = mysqli_query($conn, $qry5) or die(mysqli_error($conn));
 
 		<div class="data-table" style="margin-top: 24px;">
 			<div style="padding: 20px 24px 16px 24px; border-bottom: 1px solid rgba(0, 0, 0, 0.05);">
-				<h3 style="margin: 0; font-size: 18px; font-weight: 600; color: #2d3748; display: flex; align-items: center; gap: 8px;">
-					<i class="fas fa-chart-bar" style="width: 20px; height: 20px; color: #667eea;"></i>
+				<h3 style="margin: 0; font-size: 18px; font-weight: 600; color: #1f2937; display: flex; align-items: center; gap: 8px;">
+					<i class="fas fa-chart-bar" style="width: 20px; height: 20px; color: #059669;"></i>
 					Monthly Payroll Summary
 				</h3>
 			</div>
 			<table style="width: 100%; border-collapse: collapse;">
 				<tr>
-					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(102, 126, 234, 0.1); font-weight: 600; color: #2d3748; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-users"></i> Salaries Paid</th>
-					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(102, 126, 234, 0.1); font-weight: 600; color: #2d3748; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-money-bill-wave"></i> Basic Salary</th>
-					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(102, 126, 234, 0.1); font-weight: 600; color: #2d3748; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-utensils"></i> Meal</th>
-					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(102, 126, 234, 0.1); font-weight: 600; color: #2d3748; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-home"></i> Housing</th>
-					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(102, 126, 234, 0.1); font-weight: 600; color: #2d3748; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-car"></i> Transport</th>
-					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(102, 126, 234, 0.1); font-weight: 600; color: #2d3748; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-glass-cheers"></i> Entertainment</th>
-					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(102, 126, 234, 0.1); font-weight: 600; color: #2d3748; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-medal"></i> Long Service</th>
-					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(102, 126, 234, 0.1); font-weight: 600; color: #2d3748; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-receipt"></i> Tax</th>
-					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(102, 126, 234, 0.1); font-weight: 600; color: #2d3748; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-calculator"></i> Total</th>
-					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(102, 126, 234, 0.1); font-weight: 600; color: #2d3748; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-calendar"></i> Month</th>
+					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(5, 150, 105, 0.1); font-weight: 600; color: #1f2937; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-users"></i> Salaries Paid</th>
+					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(5, 150, 105, 0.1); font-weight: 600; color: #1f2937; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-money-bill-wave"></i> Basic Salary</th>
+					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(5, 150, 105, 0.1); font-weight: 600; color: #1f2937; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-utensils"></i> Meal</th>
+					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(5, 150, 105, 0.1); font-weight: 600; color: #1f2937; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-home"></i> Housing</th>
+					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(5, 150, 105, 0.1); font-weight: 600; color: #1f2937; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-car"></i> Transport</th>
+					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(5, 150, 105, 0.1); font-weight: 600; color: #1f2937; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-glass-cheers"></i> Entertainment</th>
+					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(5, 150, 105, 0.1); font-weight: 600; color: #1f2937; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-medal"></i> Long Service</th>
+					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(5, 150, 105, 0.1); font-weight: 600; color: #1f2937; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-receipt"></i> Tax</th>
+					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(5, 150, 105, 0.1); font-weight: 600; color: #1f2937; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-calculator"></i> Total</th>
+					<th style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); background: rgba(5, 150, 105, 0.1); font-weight: 600; color: #1f2937; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fas fa-calendar"></i> Month</th>
 				</tr>
 				<?php while ($row = mysqli_fetch_array($run)) {?>
-				<tr style="transition: all 0.3s ease;" onmouseover="this.style.background='rgba(102, 126, 234, 0.05)'" onmouseout="this.style.background='transparent'">
-					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #4a5568; font-weight: 500;"><strong><?php echo $row['count(*)']; ?></strong></td>
-					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #4a5568; font-weight: 500;">₦<?php echo number_format(round($row['sum(basic)'])); ?></td>
-					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #4a5568; font-weight: 500;">₦<?php echo number_format(round($row['sum(meal)'])); ?></td>
-					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #4a5568; font-weight: 500;">₦<?php echo number_format(round($row['sum(housing)'])); ?></td>
-					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #4a5568; font-weight: 500;">₦<?php echo number_format(round($row['sum(transport)'])); ?></td>
-					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #4a5568; font-weight: 500;">₦<?php echo number_format(round($row['sum(entertainment)'])); ?></td>
-					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #4a5568; font-weight: 500;">₦<?php echo number_format(round($row['sum(long_service)'])); ?></td>
-					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #4a5568; font-weight: 500;">₦<?php echo number_format(round($row['sum(tax)'])); ?></td>
-					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #4a5568; font-weight: 500;"><strong>₦<?php echo number_format(round($row['sum(totall)'])); ?></strong></td>
-					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #4a5568; font-weight: 500;"><a href="view_month.php?month=<?php echo $row['monthname(date_s)'];?>" style="color: #667eea; text-decoration: none; font-weight: 600;"><?php echo $row['monthname(date_s)'];?></a></td>
+				<tr style="transition: all 0.3s ease;" onmouseover="this.style.background='rgba(5, 150, 105, 0.05)'" onmouseout="this.style.background='transparent'">
+					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #64748b; font-weight: 500;"><strong><?php echo $row['count(*)']; ?></strong></td>
+					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #64748b; font-weight: 500;">₦<?php echo number_format(round($row['sum(basic)'])); ?></td>
+					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #64748b; font-weight: 500;">₦<?php echo number_format(round($row['sum(meal)'])); ?></td>
+					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #64748b; font-weight: 500;">₦<?php echo number_format(round($row['sum(housing)'])); ?></td>
+					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #64748b; font-weight: 500;">₦<?php echo number_format(round($row['sum(transport)'])); ?></td>
+					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #64748b; font-weight: 500;">₦<?php echo number_format(round($row['sum(entertainment)'])); ?></td>
+					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #64748b; font-weight: 500;">₦<?php echo number_format(round($row['sum(long_service)'])); ?></td>
+					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #64748b; font-weight: 500;">₦<?php echo number_format(round($row['sum(tax)'])); ?></td>
+					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #64748b; font-weight: 500;"><strong>₦<?php echo number_format(round($row['sum(totall)'])); ?></strong></td>
+					<td style="padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.05); color: #64748b; font-weight: 500;"><a href="view_month.php?month=<?php echo $row['monthname(date_s)'];?>" style="color: #059669; text-decoration: none; font-weight: 600;"><?php echo $row['monthname(date_s)'];?></a></td>
 				</tr>
 				<?php }?>
 			</table>
